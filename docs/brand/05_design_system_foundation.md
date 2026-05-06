@@ -328,7 +328,7 @@ Campos clinicamente sensiveis devem bloquear publicacao automatica ate revisao h
 
 ### Politica atual para avaliacoes Google
 
-A politica vigente esta documentada em [`07_google_reviews_source_decision.md`](./07_google_reviews_source_decision.md): usar apenas CTA/link para Google Maps enquanto nao houver `GOOGLE_PLACES_API_KEY` + Place ID oficial ou export aprovado do Google Business Profile. Reviews textuais dinamicas ficam fora de escopo ate uma fonte oficial existir.
+A politica vigente esta documentada em [`07_google_reviews_source_decision.md`](./07_google_reviews_source_decision.md): modo atual `places-api`, com `GOOGLE_PLACES_API_KEY` e `GOOGLE_PLACE_ID` presentes apenas no runtime do Paperclip e nao versionados. O consumo deve ser backend/server-side, com cache e fallback para CTA/link do Google Maps. Continuam proibidos scraping, reviews inventadas, copia manual sem export aprovado e qualquer exposicao de API key no frontend, repositorio, issues, comentarios, screenshots ou logs.
 
 ## Componentes Base
 
