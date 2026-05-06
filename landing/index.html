@@ -1,0 +1,1025 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Centro Veterinario Guarapiranga | Cuidado veterinario 24h</title>
+    <meta
+      name="description"
+      content="Landing institucional do Centro Veterinario Guarapiranga: cuidado veterinario 24h para caes e gatos na Guarapiranga."
+    />
+    <style>
+      :root {
+        --cvg-deep-blue: rgb(13, 71, 161);
+        --cvg-primary-blue: rgb(25, 118, 210);
+        --cvg-light-blue: rgb(66, 165, 245);
+        --cvg-soft-blue: rgb(187, 222, 251);
+        --cvg-very-light-blue: rgb(227, 242, 253);
+        --cvg-alert-red: rgb(211, 47, 47);
+        --cvg-white: rgb(255, 255, 255);
+        --cvg-clinical-bg: rgb(245, 247, 250);
+        --cvg-light-gray: rgb(224, 224, 224);
+        --cvg-dark-text: rgb(20, 30, 45);
+        --cvg-text-gray: rgb(66, 66, 66);
+        --cvg-primary-gradient: linear-gradient(
+          135deg,
+          rgb(13, 71, 161) 0%,
+          rgb(25, 118, 210) 50%,
+          rgb(66, 165, 245) 100%
+        );
+        --cvg-light-clinical-gradient: linear-gradient(
+          135deg,
+          rgb(227, 242, 253) 0%,
+          rgb(187, 222, 251) 100%
+        );
+        --shadow-sm: 0 1px 2px rgba(20, 30, 45, 0.08);
+        --shadow-md: 0 12px 32px rgba(20, 30, 45, 0.1);
+        --radius-card: 12px;
+        --radius-control: 12px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        color: var(--cvg-dark-text);
+        background: var(--cvg-white);
+        font-family:
+          "Outfit",
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      a:focus-visible,
+      button:focus-visible {
+        outline: 2px solid var(--cvg-primary-blue);
+        outline-offset: 2px;
+      }
+
+      .container {
+        width: min(100% - 32px, 1180px);
+        margin-inline: auto;
+      }
+
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        min-height: 72px;
+        background: rgba(255, 255, 255, 0.96);
+        border-bottom: 1px solid var(--cvg-light-gray);
+        backdrop-filter: blur(14px);
+      }
+
+      .header-inner {
+        display: flex;
+        min-height: 72px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+
+      .wordmark {
+        color: var(--cvg-deep-blue);
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 1.2;
+        text-decoration: none;
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .nav a {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        padding: 0 12px;
+        border-radius: var(--radius-control);
+        color: var(--cvg-text-gray);
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      .nav a:hover {
+        color: var(--cvg-deep-blue);
+        background: var(--cvg-very-light-blue);
+      }
+
+      .button {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        border-radius: var(--radius-control);
+        border: 1px solid var(--cvg-light-gray);
+        padding: 10px 18px;
+        font-weight: 700;
+        text-decoration: none;
+        transition:
+          background-color 160ms ease,
+          border-color 160ms ease,
+          color 160ms ease,
+          transform 160ms ease;
+      }
+
+      .button:hover {
+        transform: translateY(-1px);
+      }
+
+      .button-primary {
+        color: var(--cvg-deep-blue);
+        background: var(--cvg-clinical-bg);
+      }
+
+      .button-primary:hover {
+        color: var(--cvg-white);
+        border-color: var(--cvg-primary-blue);
+        background: var(--cvg-primary-blue);
+      }
+
+      .button-secondary {
+        color: var(--cvg-deep-blue);
+        border-color: var(--cvg-primary-blue);
+        background: transparent;
+      }
+
+      .button-secondary:hover {
+        color: var(--cvg-white);
+        background: var(--cvg-primary-blue);
+      }
+
+      .hero {
+        padding: 76px 0 56px;
+        background:
+          radial-gradient(
+            circle at top right,
+            rgba(187, 222, 251, 0.62),
+            transparent 34%
+          ),
+          var(--cvg-clinical-bg);
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 7fr) minmax(320px, 5fr);
+        align-items: center;
+        gap: 48px;
+      }
+
+      .badge {
+        display: inline-flex;
+        min-height: 28px;
+        align-items: center;
+        border-radius: 999px;
+        border: 1px solid var(--cvg-soft-blue);
+        padding: 4px 12px;
+        color: var(--cvg-deep-blue);
+        background: var(--cvg-very-light-blue);
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        max-width: 760px;
+        margin: 18px 0 18px;
+        font-size: 48px;
+        line-height: 1.08;
+        letter-spacing: 0;
+      }
+
+      h2 {
+        margin-bottom: 12px;
+        font-size: 32px;
+        line-height: 1.2;
+        letter-spacing: 0;
+      }
+
+      h3 {
+        margin-bottom: 8px;
+        font-size: 20px;
+        line-height: 1.3;
+        letter-spacing: 0;
+      }
+
+      .lead {
+        max-width: 680px;
+        color: var(--cvg-text-gray);
+        font-size: 18px;
+      }
+
+      .hero-actions,
+      .section-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 28px;
+      }
+
+      .trust-row {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+        margin-top: 32px;
+        max-width: 650px;
+      }
+
+      .trust-item {
+        min-height: 84px;
+        padding: 16px;
+        border: 1px solid var(--cvg-light-gray);
+        border-radius: var(--radius-card);
+        background: var(--cvg-white);
+        box-shadow: var(--shadow-sm);
+      }
+
+      .trust-item strong {
+        display: block;
+        color: var(--cvg-deep-blue);
+        font-size: 20px;
+        line-height: 1.2;
+      }
+
+      .trust-item span {
+        display: block;
+        margin-top: 4px;
+        color: var(--cvg-text-gray);
+        font-size: 14px;
+      }
+
+      .hero-panel {
+        position: relative;
+        min-height: 410px;
+        overflow: hidden;
+        border: 1px solid rgba(25, 118, 210, 0.18);
+        border-radius: 20px;
+        background: var(--cvg-light-clinical-gradient);
+        box-shadow: var(--shadow-md);
+      }
+
+      .hero-panel-content {
+        position: relative;
+        z-index: 1;
+        height: 100%;
+        display: grid;
+        align-content: end;
+        gap: 14px;
+        padding: 28px;
+      }
+
+      .care-card {
+        border: 1px solid rgba(255, 255, 255, 0.74);
+        border-radius: var(--radius-card);
+        padding: 16px;
+        background: rgba(255, 255, 255, 0.86);
+        box-shadow: var(--shadow-sm);
+      }
+
+      .care-card p {
+        margin: 0;
+        color: var(--cvg-text-gray);
+      }
+
+      .panel-mark {
+        position: absolute;
+        top: 36px;
+        right: 34px;
+        width: 128px;
+        height: 128px;
+        border: 16px solid rgba(13, 71, 161, 0.14);
+        border-radius: 28px;
+      }
+
+      .section {
+        padding: 72px 0;
+      }
+
+      .section-muted {
+        background: var(--cvg-clinical-bg);
+      }
+
+      .section-gradient {
+        background: var(--cvg-light-clinical-gradient);
+      }
+
+      .section-header {
+        max-width: 760px;
+        margin-bottom: 32px;
+      }
+
+      .section-header p {
+        color: var(--cvg-text-gray);
+      }
+
+      .notice {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 24px;
+        align-items: center;
+        border: 1px solid var(--cvg-soft-blue);
+        border-left: 6px solid var(--cvg-primary-blue);
+        border-radius: var(--radius-card);
+        padding: 24px;
+        background: var(--cvg-white);
+      }
+
+      .notice p {
+        margin-bottom: 0;
+        color: var(--cvg-text-gray);
+      }
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .service-card,
+      .value-card,
+      .structure-card,
+      .contact-card {
+        border: 1px solid var(--cvg-light-gray);
+        border-radius: var(--radius-card);
+        background: var(--cvg-white);
+        box-shadow: var(--shadow-sm);
+      }
+
+      .service-card {
+        min-height: 224px;
+        display: flex;
+        flex-direction: column;
+        padding: 22px;
+      }
+
+      .service-icon {
+        width: 42px;
+        height: 42px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 18px;
+        border-radius: 10px;
+        color: var(--cvg-deep-blue);
+        background: var(--cvg-very-light-blue);
+        font-weight: 800;
+      }
+
+      .service-card p,
+      .value-card p,
+      .structure-card p,
+      .contact-card p {
+        color: var(--cvg-text-gray);
+      }
+
+      .service-card a {
+        margin-top: auto;
+        color: var(--cvg-deep-blue);
+        font-weight: 700;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 4px;
+      }
+
+      .values-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .value-card {
+        padding: 24px;
+      }
+
+      .value-list {
+        margin: 0;
+        padding-left: 18px;
+        color: var(--cvg-text-gray);
+      }
+
+      .value-list li + li {
+        margin-top: 8px;
+      }
+
+      .structure-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+        gap: 32px;
+        align-items: start;
+      }
+
+      .structure-list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .structure-card {
+        padding: 20px;
+      }
+
+      .urgent-notice {
+        border-left-color: var(--cvg-alert-red);
+      }
+
+      .contact-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(320px, 0.85fr);
+        gap: 24px;
+        align-items: stretch;
+      }
+
+      .contact-card {
+        padding: 24px;
+      }
+
+      .map-box {
+        min-height: 280px;
+        display: grid;
+        place-items: center;
+        border: 1px dashed var(--cvg-soft-blue);
+        border-radius: var(--radius-card);
+        padding: 24px;
+        color: var(--cvg-deep-blue);
+        background: var(--cvg-very-light-blue);
+        text-align: center;
+      }
+
+      .site-footer {
+        padding: 42px 0 88px;
+        color: var(--cvg-white);
+        background: var(--cvg-primary-gradient);
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 24px;
+        align-items: start;
+      }
+
+      .site-footer p,
+      .site-footer a {
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+      }
+
+      .footer-links a {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+      }
+
+      .contact-bar {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 12;
+        display: none;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1px;
+        padding-bottom: env(safe-area-inset-bottom);
+        background: var(--cvg-light-gray);
+        box-shadow: 0 -8px 28px rgba(20, 30, 45, 0.16);
+      }
+
+      .contact-bar a {
+        min-height: 52px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+        color: var(--cvg-deep-blue);
+        background: var(--cvg-white);
+        font-size: 14px;
+        font-weight: 800;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+        }
+      }
+
+      @media (max-width: 980px) {
+        .nav {
+          display: none;
+        }
+
+        .hero-grid,
+        .structure-grid,
+        .contact-grid,
+        .footer-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-panel {
+          min-height: 340px;
+        }
+
+        .services-grid,
+        .values-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 700px) {
+        .container {
+          width: min(100% - 32px, 100%);
+        }
+
+        .site-header,
+        .header-inner {
+          min-height: 64px;
+        }
+
+        .wordmark {
+          max-width: 220px;
+          font-size: 17px;
+        }
+
+        .header-inner > .button {
+          display: none;
+        }
+
+        .hero {
+          padding: 48px 0;
+        }
+
+        h1 {
+          font-size: 36px;
+          line-height: 1.12;
+        }
+
+        h2 {
+          font-size: 28px;
+        }
+
+        .lead {
+          font-size: 16px;
+        }
+
+        .hero-actions,
+        .section-actions {
+          flex-direction: column;
+        }
+
+        .button {
+          width: 100%;
+        }
+
+        .trust-row,
+        .services-grid,
+        .values-grid,
+        .structure-list {
+          grid-template-columns: 1fr;
+        }
+
+        .notice {
+          grid-template-columns: 1fr;
+        }
+
+        .section {
+          padding: 56px 0;
+        }
+
+        .site-footer {
+          padding-bottom: 110px;
+        }
+
+        .contact-bar {
+          display: grid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a
+          class="wordmark"
+          href="#top"
+          aria-label="Centro Veterinario Guarapiranga"
+        >
+          Centro Veterinario Guarapiranga
+        </a>
+        <nav class="nav" aria-label="Navegacao principal">
+          <a href="#servicos">Servicos</a>
+          <a href="#missao">Missao</a>
+          <a href="#estrutura">Estrutura</a>
+          <a href="#contato">Contato</a>
+        </nav>
+        <a
+          class="button button-primary"
+          href="https://linktr.ee/cevetguarapiranga"
+        >
+          Falar com a equipe
+        </a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div>
+            <span class="badge">Atendimento veterinario 24h</span>
+            <h1 id="hero-title">
+              Cuidado veterinario 24h para caes e gatos na Guarapiranga.
+            </h1>
+            <p class="lead">
+              Consultas, exames, internacao, cirurgia e orientacao clara para
+              cuidar do seu pet com seguranca, acolhimento e criterio clinico.
+            </p>
+            <div class="hero-actions">
+              <a
+                class="button button-primary"
+                href="https://linktr.ee/cevetguarapiranga"
+              >
+                Falar com a equipe
+              </a>
+              <a class="button button-secondary" href="#servicos"
+                >Conhecer servicos</a
+              >
+            </div>
+            <div class="trust-row" aria-label="Informacoes de confianca">
+              <div class="trust-item">
+                <strong>24h</strong>
+                <span>Disponibilidade comunicada publicamente</span>
+              </div>
+              <div class="trust-item">
+                <strong>Caes e gatos</strong>
+                <span>Atendimento veterinario focado nesses pacientes</span>
+              </div>
+              <div class="trust-item">
+                <strong>Zona Sul</strong>
+                <span>Presenca local na Avenida Guarapiranga</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="hero-panel"
+            aria-label="Resumo institucional do cuidado CVG"
+          >
+            <div class="panel-mark" aria-hidden="true"></div>
+            <div class="hero-panel-content">
+              <div class="care-card">
+                <h2>Hospitalidade clinica</h2>
+                <p>
+                  Uma experiencia de cuidado que combina estrutura, orientacao
+                  responsavel e acolhimento para tutores em momentos de rotina
+                  ou preocupacao.
+                </p>
+              </div>
+              <div class="care-card">
+                <h3>Proximo passo claro</h3>
+                <p>
+                  Em caso de duvida, fale com a equipe para entender o
+                  atendimento mais adequado para o seu cao ou gato.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="quando-procurar">
+        <div class="container">
+          <div class="notice">
+            <div>
+              <h2 id="quando-procurar">Quando procurar atendimento?</h2>
+              <p>
+                Dificuldade respiratoria, convulsoes, sangramento, dor intensa,
+                apatia importante, vomitos persistentes ou piora repentina devem
+                orientar procura por avaliacao veterinaria.
+              </p>
+            </div>
+            <a
+              class="button button-primary"
+              href="https://linktr.ee/cevetguarapiranga"
+            >
+              Falar com a equipe
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="servicos"
+        class="section section-muted"
+        aria-labelledby="servicos-title"
+      >
+        <div class="container">
+          <div class="section-header">
+            <span class="badge">Caes e gatos</span>
+            <h2 id="servicos-title">Servicos principais</h2>
+            <p>
+              Cuidado integrado para rotina, prevencao, avaliacao, exames e
+              acompanhamento, com linguagem segura e sem promessa de resultado.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card">
+              <span class="service-icon" aria-hidden="true">24</span>
+              <h3>Atendimento 24h</h3>
+              <p>
+                Disponibilidade para orientar tutores e avaliar caes e gatos
+                quando necessario.
+              </p>
+              <a href="https://linktr.ee/cevetguarapiranga"
+                >Falar com a equipe</a
+              >
+            </article>
+            <article class="service-card">
+              <span class="service-icon" aria-hidden="true">C</span>
+              <h3>Consultas e check-up</h3>
+              <p>
+                Avaliacao veterinaria para acompanhar saude, rotina, idade e
+                sinais do pet.
+              </p>
+              <a href="https://linktr.ee/cevetguarapiranga">Saiba mais</a>
+            </article>
+            <article class="service-card">
+              <span class="service-icon" aria-hidden="true">E</span>
+              <h3>Exames e laboratorio</h3>
+              <p>
+                Estrutura de apoio diagnostico para auxiliar a avaliacao da
+                equipe veterinaria.
+              </p>
+              <a href="https://linktr.ee/cevetguarapiranga">Saiba mais</a>
+            </article>
+            <article class="service-card">
+              <span class="service-icon" aria-hidden="true">I</span>
+              <h3>Internacao</h3>
+              <p>
+                Acompanhamento do paciente quando a conduta veterinaria indicar
+                esse cuidado.
+              </p>
+              <a href="https://linktr.ee/cevetguarapiranga">Saiba mais</a>
+            </article>
+            <article class="service-card">
+              <span class="service-icon" aria-hidden="true">S</span>
+              <h3>Cirurgia</h3>
+              <p>
+                Procedimentos devem ser orientados pela avaliacao e pelo
+                protocolo da equipe.
+              </p>
+              <a href="https://linktr.ee/cevetguarapiranga">Saiba mais</a>
+            </article>
+            <article class="service-card">
+              <span class="service-icon" aria-hidden="true">V</span>
+              <h3>Vacinas</h3>
+              <p>
+                Protocolos de prevencao definidos conforme idade, historico e
+                avaliacao do pet.
+              </p>
+              <a href="https://linktr.ee/cevetguarapiranga">Saiba mais</a>
+            </article>
+            <article class="service-card">
+              <span class="service-icon" aria-hidden="true">B</span>
+              <h3>Banho e tosa</h3>
+              <p>
+                Rotina de higiene e cuidado com observacao respeitosa do
+                bem-estar animal.
+              </p>
+              <a href="https://linktr.ee/cevetguarapiranga">Saiba mais</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="missao"
+        class="section section-gradient"
+        aria-labelledby="missao-title"
+      >
+        <div class="container">
+          <div class="section-header">
+            <span class="badge">Missao, visao e valores</span>
+            <h2 id="missao-title">O que guia o cuidado do CVG</h2>
+            <p>
+              Clareza, acolhimento e responsabilidade orientam a forma como o
+              Centro Veterinario Guarapiranga se comunica e cuida de tutores,
+              caes e gatos.
+            </p>
+          </div>
+
+          <div class="values-grid">
+            <article class="value-card">
+              <h3>Missao</h3>
+              <p>
+                Oferecer atendimento veterinario completo para caes e gatos, com
+                disponibilidade 24h, estrutura de apoio diagnostico, internacao
+                e cuidado humanizado, unindo clareza medica, acolhimento ao
+                tutor e respeito ao bem-estar animal.
+              </p>
+            </article>
+            <article class="value-card">
+              <h3>Visao</h3>
+              <p>
+                Ser reconhecido na Zona Sul de Sao Paulo como um centro
+                veterinario de referencia em cuidado completo, confiavel e
+                acolhedor para caes e gatos, integrando prevencao, atendimento
+                clinico, diagnostico, internacao, cirurgia e comunicacao
+                responsavel.
+              </p>
+            </article>
+            <article class="value-card">
+              <h3>Valores</h3>
+              <ul class="value-list">
+                <li>Confianca clinica</li>
+                <li>Acolhimento real</li>
+                <li>Cuidado completo</li>
+                <li>Clareza sem simplismo</li>
+                <li>Responsabilidade</li>
+                <li>Presenca local</li>
+                <li>Evolucao continua</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="estrutura" class="section" aria-labelledby="estrutura-title">
+        <div class="container structure-grid">
+          <div class="section-header">
+            <span class="badge">Cuidado integrado</span>
+            <h2 id="estrutura-title">
+              Estrutura para apoiar orientacao e acompanhamento
+            </h2>
+            <p>
+              O CVG deve comunicar capacidade operacional com responsabilidade:
+              a estrutura apoia a avaliacao veterinaria, mas nao substitui exame
+              presencial nem garante resultado.
+            </p>
+            <div class="section-actions">
+              <a class="button button-secondary" href="#contato">Como chegar</a>
+            </div>
+          </div>
+
+          <div class="structure-list">
+            <article class="structure-card">
+              <h3>Avaliacao</h3>
+              <p>
+                Escuta do tutor, observacao do pet e definicao dos proximos
+                passos pela equipe.
+              </p>
+            </article>
+            <article class="structure-card">
+              <h3>Apoio diagnostico</h3>
+              <p>
+                Exames e laboratorio como suporte para a avaliacao veterinaria.
+              </p>
+            </article>
+            <article class="structure-card">
+              <h3>Internacao e cirurgia</h3>
+              <p>
+                Cuidados indicados conforme necessidade do paciente e conduta
+                profissional.
+              </p>
+            </article>
+            <article class="structure-card">
+              <h3>Acompanhamento</h3>
+              <p>
+                Comunicacao clara para orientar tutores durante rotina, duvida
+                ou retorno.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" aria-labelledby="urgencia-title">
+        <div class="container">
+          <div class="notice urgent-notice">
+            <div>
+              <h2 id="urgencia-title">
+                Em caso de sinais importantes, procure avaliacao veterinaria.
+              </h2>
+              <p>
+                Alguns sinais podem evoluir rapidamente e precisam de exame
+                presencial para entender a causa e definir conduta. A orientacao
+                ideal depende da avaliacao do animal.
+              </p>
+            </div>
+            <a
+              class="button button-primary"
+              href="https://linktr.ee/cevetguarapiranga"
+            >
+              Falar com a equipe
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="section" aria-labelledby="contato-title">
+        <div class="container contact-grid">
+          <div class="contact-card">
+            <span class="badge">Guarapiranga</span>
+            <h2 id="contato-title">Localizacao e contato</h2>
+            <p>
+              Avenida Guarapiranga, 1993, Sao Paulo/SP. Atendimento 24h para
+              caes e gatos quando a disponibilidade estiver atualizada nos
+              canais oficiais.
+            </p>
+            <div class="section-actions">
+              <a
+                class="button button-primary"
+                href="https://linktr.ee/cevetguarapiranga"
+              >
+                Falar com a equipe
+              </a>
+              <a
+                class="button button-secondary"
+                href="https://www.google.com/maps/search/?api=1&query=Avenida%20Guarapiranga%201993%20Sao%20Paulo%20SP"
+              >
+                Como chegar
+              </a>
+            </div>
+          </div>
+          <div
+            class="map-box"
+            role="img"
+            aria-label="Endereco do Centro Veterinario Guarapiranga"
+          >
+            <div>
+              <h3>Avenida Guarapiranga, 1993</h3>
+              <p>Sao Paulo/SP</p>
+              <p>
+                Use o botao "Como chegar" para abrir o mapa no canal atualizado.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h2>Centro Veterinario Guarapiranga</h2>
+          <p>
+            Cuidado veterinario para caes e gatos com clareza, acolhimento e
+            responsabilidade. Conteudo institucional nao substitui avaliacao
+            veterinaria.
+          </p>
+        </div>
+        <nav class="footer-links" aria-label="Links do rodape">
+          <a href="#servicos">Servicos</a>
+          <a href="#missao">Missao</a>
+          <a href="#estrutura">Estrutura</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </div>
+    </footer>
+
+    <nav class="contact-bar" aria-label="Acoes rapidas de contato">
+      <a href="https://linktr.ee/cevetguarapiranga">Equipe</a>
+      <a href="#servicos">Servicos</a>
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=Avenida%20Guarapiranga%201993%20Sao%20Paulo%20SP"
+      >
+        Mapa
+      </a>
+    </nav>
+  </body>
+</html>

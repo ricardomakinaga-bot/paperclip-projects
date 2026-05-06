@@ -1,0 +1,822 @@
+{
+  "baseUrl": "http://127.0.0.1:4173/landing/index.html",
+  "chromePath": "/root/.cache/ms-playwright/chromium-1208/chrome-linux64/chrome",
+  "generatedAt": "2026-05-06T06:00:59.991Z",
+  "results": [
+    {
+      "name": "mobile-390x844",
+      "width": 390,
+      "height": 844,
+      "initialChecks": {
+        "url": "http://127.0.0.1:4173/landing/index.html",
+        "scrollY": 0,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "horizontalOverflow": false,
+        "firstViewport": {
+          "wordmarkVisible": true,
+          "badgeVisible": true,
+          "h1Visible": true,
+          "leadVisible": true,
+          "heroCtaVisible": true,
+          "heroCtaHitTarget": true,
+          "trustItemsVisible": 3
+        },
+        "firstViewportRequiredTerms": {
+          "Centro Veterinario Guarapiranga": true,
+          "24h": true,
+          "caes e gatos": true,
+          "Guarapiranga": true
+        },
+        "missingTargets": [],
+        "ctas": [
+          {
+            "text": "Falar com a equipe",
+            "href": "https://linktr.ee/cevetguarapiranga",
+            "displayed": false,
+            "visible": false,
+            "hitTarget": null,
+            "minTouch": false,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "text": "Falar com a equipe",
+            "href": "https://linktr.ee/cevetguarapiranga",
+            "displayed": true,
+            "visible": true,
+            "hitTarget": true,
+            "minTouch": true,
+            "rect": {
+              "x": 16,
+              "y": 488,
+              "width": 358,
+              "height": 48,
+              "top": 488,
+              "right": 374,
+              "bottom": 535,
+              "left": 16
+            }
+          },
+          {
+            "text": "Conhecer servicos",
+            "href": "#servicos",
+            "displayed": true,
+            "visible": true,
+            "hitTarget": true,
+            "minTouch": true,
+            "rect": {
+              "x": 16,
+              "y": 547,
+              "width": 358,
+              "height": 48,
+              "top": 547,
+              "right": 374,
+              "bottom": 595,
+              "left": 16
+            }
+          },
+          {
+            "text": "Falar com a equipe",
+            "href": "https://linktr.ee/cevetguarapiranga",
+            "displayed": true,
+            "visible": false,
+            "hitTarget": null,
+            "minTouch": true,
+            "rect": {
+              "x": 46,
+              "y": 1818,
+              "width": 303,
+              "height": 48,
+              "top": 1818,
+              "right": 349,
+              "bottom": 1866,
+              "left": 46
+            }
+          },
+          {
+            "text": "Como chegar",
+            "href": "#contato",
+            "displayed": true,
+            "visible": false,
+            "hitTarget": null,
+            "minTouch": true,
+            "rect": {
+              "x": 16,
+              "y": 5818,
+              "width": 358,
+              "height": 48,
+              "top": 5818,
+              "right": 374,
+              "bottom": 5866,
+              "left": 16
+            }
+          },
+          {
+            "text": "Falar com a equipe",
+            "href": "https://linktr.ee/cevetguarapiranga",
+            "displayed": true,
+            "visible": false,
+            "hitTarget": null,
+            "minTouch": true,
+            "rect": {
+              "x": 46,
+              "y": 7056,
+              "width": 303,
+              "height": 48,
+              "top": 7056,
+              "right": 349,
+              "bottom": 7104,
+              "left": 46
+            }
+          },
+          {
+            "text": "Falar com a equipe",
+            "href": "https://linktr.ee/cevetguarapiranga",
+            "displayed": true,
+            "visible": false,
+            "hitTarget": null,
+            "minTouch": true,
+            "rect": {
+              "x": 41,
+              "y": 7508,
+              "width": 308,
+              "height": 48,
+              "top": 7508,
+              "right": 349,
+              "bottom": 7556,
+              "left": 41
+            }
+          },
+          {
+            "text": "Como chegar",
+            "href": "https://www.google.com/maps/search/?api=1&query=Avenida%20Guarapiranga%201993%20Sao%20Paulo%20SP",
+            "displayed": true,
+            "visible": false,
+            "hitTarget": null,
+            "minTouch": true,
+            "rect": {
+              "x": 41,
+              "y": 7568,
+              "width": 308,
+              "height": 48,
+              "top": 7568,
+              "right": 349,
+              "bottom": 7615,
+              "left": 41
+            }
+          },
+          {
+            "text": "Equipe",
+            "href": "https://linktr.ee/cevetguarapiranga",
+            "displayed": true,
+            "visible": true,
+            "hitTarget": true,
+            "minTouch": true,
+            "rect": {
+              "x": 0,
+              "y": 792,
+              "width": 129,
+              "height": 52,
+              "top": 792,
+              "right": 129,
+              "bottom": 844,
+              "left": 0
+            }
+          },
+          {
+            "text": "Servicos",
+            "href": "#servicos",
+            "displayed": true,
+            "visible": true,
+            "hitTarget": true,
+            "minTouch": true,
+            "rect": {
+              "x": 130,
+              "y": 792,
+              "width": 129,
+              "height": 52,
+              "top": 792,
+              "right": 260,
+              "bottom": 844,
+              "left": 130
+            }
+          },
+          {
+            "text": "Mapa",
+            "href": "https://www.google.com/maps/search/?api=1&query=Avenida%20Guarapiranga%201993%20Sao%20Paulo%20SP",
+            "displayed": true,
+            "visible": true,
+            "hitTarget": true,
+            "minTouch": true,
+            "rect": {
+              "x": 261,
+              "y": 792,
+              "width": 129,
+              "height": 52,
+              "top": 792,
+              "right": 390,
+              "bottom": 844,
+              "left": 261
+            }
+          }
+        ],
+        "buttonTargetsTooSmall": [],
+        "fixedBarRect": {
+          "x": 0,
+          "y": 792,
+          "width": 390,
+          "height": 52,
+          "top": 792,
+          "right": 390,
+          "bottom": 844,
+          "left": 0
+        },
+        "visibleButtonsBehindFixedBar": []
+      },
+      "focus": {
+        "tag": "A",
+        "text": "Centro Veterinario Guarapiranga",
+        "href": "#top",
+        "outlineStyle": "solid",
+        "outlineWidth": "2px",
+        "outlineColor": "rgb(25, 118, 210)",
+        "rect": {
+          "x": 16,
+          "y": 12,
+          "width": 220,
+          "height": 41
+        }
+      },
+      "anchorChecks": [
+        {
+          "hash": "#servicos",
+          "ok": true,
+          "locationHash": "#servicos",
+          "targetTop": 0,
+          "scrollY": 1947,
+          "linkText": "Conhecer servicos"
+        },
+        {
+          "hash": "#missao",
+          "ok": true,
+          "locationHash": "#missao",
+          "targetTop": 0,
+          "scrollY": 4176,
+          "linkText": "Missao"
+        },
+        {
+          "hash": "#estrutura",
+          "ok": true,
+          "locationHash": "#estrutura",
+          "targetTop": 0,
+          "scrollY": 5461,
+          "linkText": "Estrutura"
+        },
+        {
+          "hash": "#contato",
+          "ok": true,
+          "locationHash": "#contato",
+          "targetTop": 0,
+          "scrollY": 7185,
+          "linkText": "Como chegar"
+        }
+      ],
+      "bottomChecks": {
+        "url": "http://127.0.0.1:4173/landing/index.html#contato",
+        "scrollY": 7574,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "horizontalOverflow": false,
+        "firstViewport": {
+          "wordmarkVisible": true,
+          "badgeVisible": false,
+          "h1Visible": false,
+          "leadVisible": false,
+          "heroCtaVisible": false,
+          "heroCtaHitTarget": false,
+          "trustItemsVisible": 0
+        },
+        "firstViewportRequiredTerms": {
+          "Centro Veterinario Guarapiranga": true,
+          "24h": false,
+          "caes e gatos": false,
+          "Guarapiranga": true
+        },
+        "missingTargets": [],
+        "ctas": [
+          {
+            "text": "Falar com a equipe",
+            "href": "https://linktr.ee/cevetguarapiranga",
+            "displayed": false,
+            "visible": false,
+            "hitTarget": null,
+            "minTouch": false,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "text": "Falar com a equipe",
+            "href": "https://linktr.ee/cevetguarapiranga",
+            "displayed": true,
+            "visible": false,
+            "hitTarget": null,
+            "minTouch": true,
+            "rect": {
+              "x": 16,
+              "y": -7086,
+              "width": 358,
+              "height": 48,
+              "top": -7086,
+              "right": 374,
+              "bottom": -7039,
+              "left": 16
+            }
+          },
+          {
+            "text": "Conhecer servicos",
+            "href": "#servicos",
+            "displayed": true,
+            "visible": false,
+            "hitTarget": null,
+            "minTouch": true,
+            "rect": {
+              "x": 16,
+              "y": -7027,
+              "width": 358,
+              "height": 48,
+              "top": -7027,
+              "right": 374,
+              "bottom": -6979,
+              "left": 16
+            }
+          },
+          {
+            "text": "Falar com a equipe",
+            "href": "https://linktr.ee/cevetguarapiranga",
+            "displayed": true,
+            "visible": false,
+            "hitTarget": null,
+            "minTouch": true,
+            "rect": {
+              "x": 46,
+              "y": -5756,
+              "width": 303,
+              "height": 48,
+              "top": -5756,
+              "right": 349,
+              "bottom": -5708,
+              "left": 46
+            }
+          },
+          {
+            "text": "Como chegar",
+            "href": "#contato",
+            "displayed": true,
+            "visible": false,
+            "hitTarget": null,
+            "minTouch": true,
+            "rect": {
+              "x": 16,
+              "y": -1756,
+              "width": 358,
+              "height": 48,
+              "top": -1756,
+              "right": 374,
+              "bottom": -1708,
+              "left": 16
+            }
+          },
+          {
+            "text": "Falar com a equipe",
+            "href": "https://linktr.ee/cevetguarapiranga",
+            "displayed": true,
+            "visible": false,
+            "hitTarget": null,
+            "minTouch": true,
+            "rect": {
+              "x": 46,
+              "y": -518,
+              "width": 303,
+              "height": 48,
+              "top": -518,
+              "right": 349,
+              "bottom": -470,
+              "left": 46
+            }
+          },
+          {
+            "text": "Falar com a equipe",
+            "href": "https://linktr.ee/cevetguarapiranga",
+            "displayed": true,
+            "visible": false,
+            "hitTarget": null,
+            "minTouch": true,
+            "rect": {
+              "x": 41,
+              "y": -66,
+              "width": 308,
+              "height": 48,
+              "top": -66,
+              "right": 349,
+              "bottom": -18,
+              "left": 41
+            }
+          },
+          {
+            "text": "Como chegar",
+            "href": "https://www.google.com/maps/search/?api=1&query=Avenida%20Guarapiranga%201993%20Sao%20Paulo%20SP",
+            "displayed": true,
+            "visible": true,
+            "hitTarget": false,
+            "minTouch": true,
+            "rect": {
+              "x": 41,
+              "y": -6,
+              "width": 308,
+              "height": 48,
+              "top": -6,
+              "right": 349,
+              "bottom": 41,
+              "left": 41
+            }
+          },
+          {
+            "text": "Equipe",
+            "href": "https://linktr.ee/cevetguarapiranga",
+            "displayed": true,
+            "visible": true,
+            "hitTarget": true,
+            "minTouch": true,
+            "rect": {
+              "x": 0,
+              "y": 792,
+              "width": 129,
+              "height": 52,
+              "top": 792,
+              "right": 129,
+              "bottom": 844,
+              "left": 0
+            }
+          },
+          {
+            "text": "Servicos",
+            "href": "#servicos",
+            "displayed": true,
+            "visible": true,
+            "hitTarget": true,
+            "minTouch": true,
+            "rect": {
+              "x": 130,
+              "y": 792,
+              "width": 129,
+              "height": 52,
+              "top": 792,
+              "right": 260,
+              "bottom": 844,
+              "left": 130
+            }
+          },
+          {
+            "text": "Mapa",
+            "href": "https://www.google.com/maps/search/?api=1&query=Avenida%20Guarapiranga%201993%20Sao%20Paulo%20SP",
+            "displayed": true,
+            "visible": true,
+            "hitTarget": true,
+            "minTouch": true,
+            "rect": {
+              "x": 261,
+              "y": 792,
+              "width": 129,
+              "height": 52,
+              "top": 792,
+              "right": 390,
+              "bottom": 844,
+              "left": 261
+            }
+          }
+        ],
+        "buttonTargetsTooSmall": [],
+        "fixedBarRect": {
+          "x": 0,
+          "y": 792,
+          "width": 390,
+          "height": 52,
+          "top": 792,
+          "right": 390,
+          "bottom": 844,
+          "left": 0
+        },
+        "visibleButtonsBehindFixedBar": []
+      }
+    },
+    {
+      "name": "desktop-1440x900",
+      "width": 1440,
+      "height": 900,
+      "initialChecks": {
+        "url": "http://127.0.0.1:4173/landing/index.html",
+        "scrollY": 0,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "horizontalOverflow": false,
+        "firstViewport": {
+          "wordmarkVisible": true,
+          "badgeVisible": true,
+          "h1Visible": true,
+          "leadVisible": true,
+          "heroCtaVisible": true,
+          "heroCtaHitTarget": true,
+          "trustItemsVisible": 3
+        },
+        "firstViewportRequiredTerms": {
+          "Centro Veterinario Guarapiranga": true,
+          "24h": true,
+          "caes e gatos": true,
+          "Guarapiranga": true
+        },
+        "missingTargets": [],
+        "ctas": [
+          {
+            "text": "Falar com a equipe",
+            "href": "https://linktr.ee/cevetguarapiranga",
+            "displayed": true,
+            "visible": true,
+            "hitTarget": true,
+            "minTouch": true,
+            "rect": {
+              "x": 1101,
+              "y": 12,
+              "width": 209,
+              "height": 48,
+              "top": 12,
+              "right": 1310,
+              "bottom": 60,
+              "left": 1101
+            }
+          },
+          {
+            "text": "Falar com a equipe",
+            "href": "https://linktr.ee/cevetguarapiranga",
+            "displayed": true,
+            "visible": true,
+            "hitTarget": true,
+            "minTouch": true,
+            "rect": {
+              "x": 130,
+              "y": 458,
+              "width": 209,
+              "height": 48,
+              "top": 458,
+              "right": 339,
+              "bottom": 506,
+              "left": 130
+            }
+          },
+          {
+            "text": "Conhecer servicos",
+            "href": "#servicos",
+            "displayed": true,
+            "visible": true,
+            "hitTarget": true,
+            "minTouch": true,
+            "rect": {
+              "x": 351,
+              "y": 458,
+              "width": 202,
+              "height": 48,
+              "top": 458,
+              "right": 553,
+              "bottom": 506,
+              "left": 351
+            }
+          },
+          {
+            "text": "Falar com a equipe",
+            "href": "https://linktr.ee/cevetguarapiranga",
+            "displayed": true,
+            "visible": true,
+            "hitTarget": true,
+            "minTouch": true,
+            "rect": {
+              "x": 1076,
+              "y": 847,
+              "width": 209,
+              "height": 48,
+              "top": 847,
+              "right": 1285,
+              "bottom": 895,
+              "left": 1076
+            }
+          },
+          {
+            "text": "Como chegar",
+            "href": "#contato",
+            "displayed": true,
+            "visible": false,
+            "hitTarget": null,
+            "minTouch": true,
+            "rect": {
+              "x": 130,
+              "y": 3093,
+              "width": 156,
+              "height": 48,
+              "top": 3093,
+              "right": 286,
+              "bottom": 3141,
+              "left": 130
+            }
+          },
+          {
+            "text": "Falar com a equipe",
+            "href": "https://linktr.ee/cevetguarapiranga",
+            "displayed": true,
+            "visible": false,
+            "hitTarget": null,
+            "minTouch": true,
+            "rect": {
+              "x": 1076,
+              "y": 3396,
+              "width": 209,
+              "height": 48,
+              "top": 3396,
+              "right": 1285,
+              "bottom": 3443,
+              "left": 1076
+            }
+          },
+          {
+            "text": "Falar com a equipe",
+            "href": "https://linktr.ee/cevetguarapiranga",
+            "displayed": true,
+            "visible": false,
+            "hitTarget": null,
+            "minTouch": true,
+            "rect": {
+              "x": 155,
+              "y": 3846,
+              "width": 209,
+              "height": 48,
+              "top": 3846,
+              "right": 364,
+              "bottom": 3893,
+              "left": 155
+            }
+          },
+          {
+            "text": "Como chegar",
+            "href": "https://www.google.com/maps/search/?api=1&query=Avenida%20Guarapiranga%201993%20Sao%20Paulo%20SP",
+            "displayed": true,
+            "visible": false,
+            "hitTarget": null,
+            "minTouch": true,
+            "rect": {
+              "x": 376,
+              "y": 3846,
+              "width": 156,
+              "height": 48,
+              "top": 3846,
+              "right": 532,
+              "bottom": 3893,
+              "left": 376
+            }
+          },
+          {
+            "text": "Equipe",
+            "href": "https://linktr.ee/cevetguarapiranga",
+            "displayed": false,
+            "visible": false,
+            "hitTarget": null,
+            "minTouch": false,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "text": "Servicos",
+            "href": "#servicos",
+            "displayed": false,
+            "visible": false,
+            "hitTarget": null,
+            "minTouch": false,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "text": "Mapa",
+            "href": "https://www.google.com/maps/search/?api=1&query=Avenida%20Guarapiranga%201993%20Sao%20Paulo%20SP",
+            "displayed": false,
+            "visible": false,
+            "hitTarget": null,
+            "minTouch": false,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        ],
+        "buttonTargetsTooSmall": [],
+        "fixedBarRect": null,
+        "visibleButtonsBehindFixedBar": []
+      },
+      "focus": {
+        "tag": "A",
+        "text": "Centro Veterinario Guarapiranga",
+        "href": "#top",
+        "outlineStyle": "solid",
+        "outlineWidth": "2px",
+        "outlineColor": "rgb(25, 118, 210)",
+        "rect": {
+          "x": 130,
+          "y": 25,
+          "width": 351,
+          "height": 23
+        }
+      },
+      "anchorChecks": [
+        {
+          "hash": "#servicos",
+          "ok": true,
+          "locationHash": "#servicos",
+          "targetTop": 0,
+          "scrollY": 1019,
+          "linkText": "Servicos"
+        },
+        {
+          "hash": "#missao",
+          "ok": true,
+          "locationHash": "#missao",
+          "targetTop": 0,
+          "scrollY": 2136,
+          "linkText": "Missao"
+        },
+        {
+          "hash": "#estrutura",
+          "ok": true,
+          "locationHash": "#estrutura",
+          "targetTop": 0,
+          "scrollY": 2757,
+          "linkText": "Estrutura"
+        },
+        {
+          "hash": "#contato",
+          "ok": true,
+          "locationHash": "#contato",
+          "targetTop": 229,
+          "scrollY": 3358,
+          "linkText": "Contato"
+        }
+      ],
+      "bottomChecks": null
+    }
+  ]
+}
