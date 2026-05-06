@@ -60,6 +60,7 @@
           sans-serif;
         font-size: 16px;
         line-height: 1.6;
+        overflow-x: hidden;
       }
 
       a {
@@ -73,7 +74,7 @@
       }
 
       .container {
-        width: min(100% - 32px, 1180px);
+        width: min(calc(100% - 32px), 1180px);
         margin-inline: auto;
       }
 
@@ -96,11 +97,28 @@
       }
 
       .wordmark {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
         color: var(--cvg-deep-blue);
         font-size: 19px;
         font-weight: 700;
         line-height: 1.2;
         text-decoration: none;
+      }
+
+      .logo-mark {
+        width: 44px;
+        height: 44px;
+        flex: 0 0 auto;
+        border: 1px solid var(--cvg-light-gray);
+        border-radius: 50%;
+        background: var(--cvg-white);
+        object-fit: contain;
+      }
+
+      .wordmark-text {
+        display: inline-block;
       }
 
       .nav {
@@ -182,7 +200,7 @@
 
       .hero-grid {
         display: grid;
-        grid-template-columns: minmax(0, 7fr) minmax(320px, 5fr);
+        grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
         align-items: center;
         gap: 48px;
       }
@@ -213,6 +231,11 @@
         font-size: 48px;
         line-height: 1.08;
         letter-spacing: 0;
+        overflow-wrap: break-word;
+      }
+
+      .hero-title-line {
+        display: inline;
       }
 
       h2 {
@@ -277,6 +300,8 @@
       .hero-panel {
         position: relative;
         min-height: 410px;
+        display: grid;
+        grid-template-rows: minmax(180px, 0.9fr) minmax(0, 1fr);
         overflow: hidden;
         border: 1px solid rgba(25, 118, 210, 0.18);
         border-radius: 20px;
@@ -284,10 +309,17 @@
         box-shadow: var(--shadow-md);
       }
 
+      .hero-social-image {
+        width: 100%;
+        height: 100%;
+        min-height: 188px;
+        border-bottom: 1px solid rgba(25, 118, 210, 0.18);
+        object-fit: cover;
+      }
+
       .hero-panel-content {
         position: relative;
         z-index: 1;
-        height: 100%;
         display: grid;
         align-content: end;
         gap: 14px;
@@ -449,7 +481,7 @@
 
       .contact-grid {
         display: grid;
-        grid-template-columns: minmax(0, 1fr) minmax(320px, 0.85fr);
+        grid-template-columns: minmax(0, 1fr) minmax(0, 0.85fr);
         gap: 24px;
         align-items: stretch;
       }
@@ -460,14 +492,20 @@
 
       .map-box {
         min-height: 280px;
-        display: grid;
-        place-items: center;
+        overflow: hidden;
         border: 1px dashed var(--cvg-soft-blue);
         border-radius: var(--radius-card);
-        padding: 24px;
         color: var(--cvg-deep-blue);
         background: var(--cvg-very-light-blue);
         text-align: center;
+      }
+
+      .map-box iframe {
+        width: 100%;
+        height: 100%;
+        min-height: 320px;
+        display: block;
+        border: 0;
       }
 
       .site-footer {
@@ -563,7 +601,7 @@
 
       @media (max-width: 700px) {
         .container {
-          width: min(100% - 32px, 100%);
+          width: min(calc(100% - 32px), 100%);
         }
 
         .site-header,
@@ -576,6 +614,11 @@
           font-size: 17px;
         }
 
+        .logo-mark {
+          width: 38px;
+          height: 38px;
+        }
+
         .header-inner > .button {
           display: none;
         }
@@ -585,8 +628,13 @@
         }
 
         h1 {
-          font-size: 36px;
+          font-size: 32px;
           line-height: 1.12;
+          max-width: 100%;
+        }
+
+        .hero-title-line {
+          display: block;
         }
 
         h2 {
@@ -595,6 +643,7 @@
 
         .lead {
           font-size: 16px;
+          max-width: 34ch;
         }
 
         .hero-actions,
@@ -639,7 +688,14 @@
           href="#top"
           aria-label="Centro Veterinario Guarapiranga"
         >
-          Centro Veterinario Guarapiranga
+          <img
+            class="logo-mark"
+            src="./assets/cvg-logo.jpg"
+            alt=""
+            width="44"
+            height="44"
+          />
+          <span class="wordmark-text">Centro Veterinario Guarapiranga</span>
         </a>
         <nav class="nav" aria-label="Navegacao principal">
           <a href="#servicos">Servicos</a>
@@ -647,10 +703,7 @@
           <a href="#estrutura">Estrutura</a>
           <a href="#contato">Contato</a>
         </nav>
-        <a
-          class="button button-primary"
-          href="https://linktr.ee/cevetguarapiranga"
-        >
+        <a class="button button-primary" href="https://wa.me/5511985097715">
           Falar com a equipe
         </a>
       </div>
@@ -662,7 +715,10 @@
           <div>
             <span class="badge">Atendimento veterinario 24h</span>
             <h1 id="hero-title">
-              Cuidado veterinario 24h para caes e gatos na Guarapiranga.
+              <span class="hero-title-line">Cuidado veterinario</span>
+              <span class="hero-title-line">24h para caes</span>
+              <span class="hero-title-line">e gatos na</span>
+              <span class="hero-title-line">Guarapiranga.</span>
             </h1>
             <p class="lead">
               Consultas, exames, internacao, cirurgia e orientacao clara para
@@ -671,7 +727,7 @@
             <div class="hero-actions">
               <a
                 class="button button-primary"
-                href="https://linktr.ee/cevetguarapiranga"
+                href="https://wa.me/5511985097715"
               >
                 Falar com a equipe
               </a>
@@ -699,6 +755,13 @@
             class="hero-panel"
             aria-label="Resumo institucional do cuidado CVG"
           >
+            <img
+              class="hero-social-image"
+              src="./assets/cvg-linktree-profile.jpg"
+              alt="Perfil social oficial Cevet Guarapiranga com logo da marca"
+              width="1200"
+              height="630"
+            />
             <div class="panel-mark" aria-hidden="true"></div>
             <div class="hero-panel-content">
               <div class="care-card">
@@ -732,10 +795,7 @@
                 orientar procura por avaliacao veterinaria.
               </p>
             </div>
-            <a
-              class="button button-primary"
-              href="https://linktr.ee/cevetguarapiranga"
-            >
+            <a class="button button-primary" href="https://wa.me/5511985097715">
               Falar com a equipe
             </a>
           </div>
@@ -765,9 +825,7 @@
                 Disponibilidade para orientar tutores e avaliar caes e gatos
                 quando necessario.
               </p>
-              <a href="https://linktr.ee/cevetguarapiranga"
-                >Falar com a equipe</a
-              >
+              <a href="https://wa.me/5511985097715">Falar com a equipe</a>
             </article>
             <article class="service-card">
               <span class="service-icon" aria-hidden="true">C</span>
@@ -776,7 +834,7 @@
                 Avaliacao veterinaria para acompanhar saude, rotina, idade e
                 sinais do pet.
               </p>
-              <a href="https://linktr.ee/cevetguarapiranga">Saiba mais</a>
+              <a href="https://wa.me/5511985097715">Saiba mais</a>
             </article>
             <article class="service-card">
               <span class="service-icon" aria-hidden="true">E</span>
@@ -785,7 +843,7 @@
                 Estrutura de apoio diagnostico para auxiliar a avaliacao da
                 equipe veterinaria.
               </p>
-              <a href="https://linktr.ee/cevetguarapiranga">Saiba mais</a>
+              <a href="https://wa.me/5511985097715">Saiba mais</a>
             </article>
             <article class="service-card">
               <span class="service-icon" aria-hidden="true">I</span>
@@ -794,7 +852,7 @@
                 Acompanhamento do paciente quando a conduta veterinaria indicar
                 esse cuidado.
               </p>
-              <a href="https://linktr.ee/cevetguarapiranga">Saiba mais</a>
+              <a href="https://wa.me/5511985097715">Saiba mais</a>
             </article>
             <article class="service-card">
               <span class="service-icon" aria-hidden="true">S</span>
@@ -803,7 +861,7 @@
                 Procedimentos devem ser orientados pela avaliacao e pelo
                 protocolo da equipe.
               </p>
-              <a href="https://linktr.ee/cevetguarapiranga">Saiba mais</a>
+              <a href="https://wa.me/5511985097715">Saiba mais</a>
             </article>
             <article class="service-card">
               <span class="service-icon" aria-hidden="true">V</span>
@@ -812,7 +870,7 @@
                 Protocolos de prevencao definidos conforme idade, historico e
                 avaliacao do pet.
               </p>
-              <a href="https://linktr.ee/cevetguarapiranga">Saiba mais</a>
+              <a href="https://wa.me/5511985097715">Saiba mais</a>
             </article>
             <article class="service-card">
               <span class="service-icon" aria-hidden="true">B</span>
@@ -821,7 +879,7 @@
                 Rotina de higiene e cuidado com observacao respeitosa do
                 bem-estar animal.
               </p>
-              <a href="https://linktr.ee/cevetguarapiranga">Saiba mais</a>
+              <a href="https://wa.me/5511985097715">Saiba mais</a>
             </article>
           </div>
         </div>
@@ -941,10 +999,7 @@
                 ideal depende da avaliacao do animal.
               </p>
             </div>
-            <a
-              class="button button-primary"
-              href="https://linktr.ee/cevetguarapiranga"
-            >
+            <a class="button button-primary" href="https://wa.me/5511985097715">
               Falar com a equipe
             </a>
           </div>
@@ -959,12 +1014,13 @@
             <p>
               Avenida Guarapiranga, 1993, Sao Paulo/SP. Atendimento 24h para
               caes e gatos quando a disponibilidade estiver atualizada nos
-              canais oficiais.
+              canais oficiais. Contatos publicos consultados: WhatsApp (11)
+              98509-7715 e telefone (11) 5892-4282.
             </p>
             <div class="section-actions">
               <a
                 class="button button-primary"
-                href="https://linktr.ee/cevetguarapiranga"
+                href="https://wa.me/5511985097715"
               >
                 Falar com a equipe
               </a>
@@ -974,20 +1030,19 @@
               >
                 Como chegar
               </a>
+              <a class="button button-secondary" href="tel:+551158924282">
+                Ligar
+              </a>
             </div>
           </div>
-          <div
-            class="map-box"
-            role="img"
-            aria-label="Endereco do Centro Veterinario Guarapiranga"
-          >
-            <div>
-              <h3>Avenida Guarapiranga, 1993</h3>
-              <p>Sao Paulo/SP</p>
-              <p>
-                Use o botao "Como chegar" para abrir o mapa no canal atualizado.
-              </p>
-            </div>
+          <div class="map-box">
+            <iframe
+              title="Mapa do Centro Veterinario Guarapiranga"
+              src="https://www.google.com/maps?q=Centro%20Veterin%C3%A1rio%20Guarapiranga%20Avenida%20Guarapiranga%201993%20S%C3%A3o%20Paulo%20SP&amp;output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </section>
@@ -1013,8 +1068,8 @@
     </footer>
 
     <nav class="contact-bar" aria-label="Acoes rapidas de contato">
-      <a href="https://linktr.ee/cevetguarapiranga">Equipe</a>
-      <a href="#servicos">Servicos</a>
+      <a href="https://wa.me/5511985097715">Equipe</a>
+      <a href="tel:+551158924282">Ligar</a>
       <a
         href="https://www.google.com/maps/search/?api=1&query=Avenida%20Guarapiranga%201993%20Sao%20Paulo%20SP"
       >

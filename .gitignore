@@ -1,0 +1,53 @@
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+!.env.*.example
+.envrc
+.env.local
+.env.*.local
+
+# Private keys, certificates, and keystores
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.crt
+*.cer
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+id_rsa.pub
+id_dsa.pub
+id_ecdsa.pub
+id_ed25519.pub
+
+# Token and registry credential files
+.npmrc
+.pypirc
+.netrc
+.docker/config.json
+*token*.txt
+*tokens*.json
+*credentials*.json
+*credential*.json
+*service-account*.json
+*service_account*.json
+*secret*.json
+*secrets*.json
+
+# Common secret directories
+.secrets/
+secrets/
+private/
+credentials/
+service-accounts/
+service_accounts/
+
+# Generated local artifacts
+node_modules/
+.DS_Store
+*.log
