@@ -313,9 +313,22 @@ type CvgContact = CvgSourceState & {
   mapsUrl: string;
   hoursLabel: string;
 };
+
+type CvgGoogleReviewsPolicy = {
+  mode: "maps-cta-only" | "places-api" | "business-profile-export";
+  mapsUrl: string;
+  placeId?: string;
+  verifiedAt: string;
+  approvedBy: "CEO" | "CMOEditorial" | "DirecaoTecnica";
+  notes: string;
+};
 ```
 
 Campos clinicamente sensiveis devem bloquear publicacao automatica ate revisao humana ou veterinaria, conforme [`03_ai_brand_guidelines.md`](./03_ai_brand_guidelines.md).
+
+### Politica atual para avaliacoes Google
+
+A politica vigente esta documentada em [`07_google_reviews_source_decision.md`](./07_google_reviews_source_decision.md): usar apenas CTA/link para Google Maps enquanto nao houver `GOOGLE_PLACES_API_KEY` + Place ID oficial ou export aprovado do Google Business Profile. Reviews textuais dinamicas ficam fora de escopo ate uma fonte oficial existir.
 
 ## Componentes Base
 
