@@ -1,0 +1,29 @@
+{
+  "state": "loaded-with-cards",
+  "generatedAt": "2026-05-06T21:50:35.938Z",
+  "source": {
+    "provider": "Google Places Details legacy",
+    "profileName": "Centro Veterinário Guarapiranga 24hs",
+    "publicUrl": "https://maps.google.com/?cid=17542561690735068854",
+    "sourceDecision": "RMA-19 google-reviews-source-package revision 3"
+  },
+  "aggregate": {
+    "rating": 4.5,
+    "totalReviews": 850,
+    "updatedAt": "2026-05-06T21:50:35.938Z"
+  },
+  "reviews": [
+    {
+      "reviewer": "Carlos Herold",
+      "rating": 5,
+      "reviewedAt": "2026-04-25T16:40:56.000Z",
+      "text": "Ótima clínica com excelentes profissionais super recomendo."
+    },
+    {
+      "reviewer": "Jaqueline Botelho Da Ponte",
+      "rating": 5,
+      "reviewedAt": "2026-04-25T16:26:11.000Z",
+      "text": "Profissionais sérios, competentes, atenciosos, cuidam da minha filha de quatro patas com muito carinho. Indico o atendimento deles."
+    }
+  ]
+}

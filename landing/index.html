@@ -494,26 +494,107 @@
         padding: 20px;
       }
 
-      .google-review-card {
-        margin-top: 24px;
+      .google-reviews-shell {
+        display: grid;
+        gap: 24px;
+      }
+
+      .google-reviews-header {
+        max-width: 760px;
+      }
+
+      .google-reviews-header p {
+        color: var(--cvg-text-gray);
+      }
+
+      .google-rating-summary {
+        display: none;
+        align-items: center;
+        gap: 12px;
+        padding: 16px 18px;
         border: 1px solid var(--cvg-soft-blue);
         border-radius: var(--radius-card);
-        padding: 20px;
         background: var(--cvg-white);
         box-shadow: var(--shadow-sm);
       }
 
-      .google-review-card h3 {
-        color: var(--cvg-deep-blue);
+      .google-rating-summary.is-visible {
+        display: inline-flex;
       }
 
-      .google-review-card p {
+      .google-rating-score {
+        color: var(--cvg-deep-blue);
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 1;
+      }
+
+      .google-rating-copy {
+        margin: 0;
+        color: var(--cvg-text-gray);
+        font-size: 14px;
+      }
+
+      .google-review-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .google-review-card {
+        display: grid;
+        gap: 14px;
+        border: 1px solid var(--cvg-light-gray);
+        border-radius: var(--radius-card);
+        padding: 22px;
+        background: var(--cvg-white);
+        box-shadow: var(--shadow-sm);
+      }
+
+      .google-review-card header {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 12px;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .google-review-name {
+        color: var(--cvg-deep-blue);
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 1.25;
+      }
+
+      .google-review-stars {
+        color: var(--cvg-deep-blue);
+        font-size: 16px;
+        letter-spacing: 0;
+      }
+
+      .google-review-text {
+        margin: 0;
         color: var(--cvg-text-gray);
       }
 
-      .review-note {
-        margin: 12px 0 0;
+      .google-review-meta {
+        margin: 0;
+        color: var(--cvg-text-gray);
         font-size: 14px;
+      }
+
+      .google-review-actions {
+        margin-top: 0;
+      }
+
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        white-space: nowrap;
       }
 
       .urgent-notice {
@@ -635,7 +716,8 @@
         }
 
         .services-grid,
-        .values-grid {
+        .values-grid,
+        .google-review-grid {
           grid-template-columns: repeat(2, minmax(0, 1fr));
         }
       }
@@ -699,7 +781,8 @@
         .trust-row,
         .services-grid,
         .values-grid,
-        .structure-list {
+        .structure-list,
+        .google-review-grid {
           grid-template-columns: 1fr;
         }
 
@@ -741,7 +824,6 @@
         <nav class="nav" aria-label="Navegacao principal">
           <a href="#servicos">Servicos</a>
           <a href="#missao">Missao</a>
-          <a href="#estrutura">Estrutura</a>
           <a href="#contato">Contato</a>
         </nav>
         <a class="button button-primary" href="https://wa.me/5511985097715">
@@ -853,7 +935,7 @@
             <span class="badge">Caes e gatos</span>
             <h2 id="servicos-title">Servicos principais</h2>
             <p>
-              Cuidado integrado para rotina, prevencao, avaliacao, exames e
+              Servicos para rotina, prevencao, avaliacao, exames e
               acompanhamento, com linguagem segura e sem promessa de resultado.
             </p>
           </div>
@@ -1027,72 +1109,41 @@
         </div>
       </section>
 
-      <section id="estrutura" class="section" aria-labelledby="estrutura-title">
-        <div class="container structure-grid">
-          <div class="section-header">
-            <span class="badge">Cuidado integrado</span>
-            <h2 id="estrutura-title">
-              Estrutura para apoiar orientacao e acompanhamento
-            </h2>
+      <section
+        id="avaliacoes-google"
+        class="section section-gradient"
+        aria-labelledby="google-reviews-title"
+        data-google-reviews-section
+      >
+        <div class="container google-reviews-shell">
+          <div class="google-reviews-header">
+            <span class="badge">Google Maps</span>
+            <h2 id="google-reviews-title">Avaliações públicas no Google</h2>
             <p>
-              O CVG deve comunicar capacidade operacional com responsabilidade:
-              a estrutura apoia a avaliacao veterinaria, mas nao substitui exame
-              presencial nem garante resultado.
+              As avaliações públicas mudam ao longo do tempo. Cada atendimento
+              depende da avaliação individual do paciente e da orientação da
+              equipe veterinária.
             </p>
-            <div class="section-actions">
-              <a class="button button-secondary" href="#contato">Como chegar</a>
-            </div>
-            <div class="google-review-card">
-              <span class="badge">Google Maps</span>
-              <h3>Veja avaliacoes publicas do CVG</h3>
-              <p>
-                As avaliacoes publicas mudam ao longo do tempo. Cada atendimento
-                depende da avaliacao individual do paciente e da orientacao da
-                equipe veterinaria.
-              </p>
-              <div class="section-actions">
-                <a
-                  class="button button-primary"
-                  href="https://maps.app.goo.gl/JL6qTAAV4v96Zewu5"
-                >
-                  Ver avaliacoes no Google Maps
-                </a>
-              </div>
-              <p class="review-note">
-                Reviews textuais so devem entrar futuramente via fonte oficial
-                aprovada.
-              </p>
-            </div>
           </div>
 
-          <div class="structure-list">
-            <article class="structure-card">
-              <h3>Avaliacao</h3>
-              <p>
-                Escuta do tutor, observacao do pet e definicao dos proximos
-                passos pela equipe.
-              </p>
-            </article>
-            <article class="structure-card">
-              <h3>Apoio diagnostico</h3>
-              <p>
-                Exames e laboratorio como suporte para a avaliacao veterinaria.
-              </p>
-            </article>
-            <article class="structure-card">
-              <h3>Internacao e cirurgia</h3>
-              <p>
-                Cuidados indicados conforme necessidade do paciente e conduta
-                profissional.
-              </p>
-            </article>
-            <article class="structure-card">
-              <h3>Acompanhamento</h3>
-              <p>
-                Comunicacao clara para orientar tutores durante rotina, duvida
-                ou retorno.
-              </p>
-            </article>
+          <div
+            class="google-rating-summary"
+            data-google-rating-summary
+            aria-live="polite"
+          ></div>
+
+          <div class="google-review-grid" data-google-review-grid hidden></div>
+
+          <div class="section-actions google-review-actions">
+            <a
+              class="button button-primary"
+              href="https://maps.app.goo.gl/JL6qTAAV4v96Zewu5"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Ver avaliações no Google Maps, abre em nova aba"
+            >
+              Ver avaliações no Google Maps
+            </a>
           </div>
         </div>
       </section>
@@ -1172,7 +1223,6 @@
         <nav class="footer-links" aria-label="Links do rodape">
           <a href="#servicos">Servicos</a>
           <a href="#missao">Missao</a>
-          <a href="#estrutura">Estrutura</a>
           <a href="#contato">Contato</a>
         </nav>
       </div>
@@ -1187,5 +1237,109 @@
         Mapa
       </a>
     </nav>
+    <script>
+      (() => {
+        const section = document.querySelector("[data-google-reviews-section]");
+        if (!section) return;
+
+        const reviewGrid = section.querySelector("[data-google-review-grid]");
+        const summary = section.querySelector("[data-google-rating-summary]");
+        const formatter = new Intl.DateTimeFormat("pt-BR", {
+          day: "2-digit",
+          month: "2-digit",
+          year: "numeric",
+          timeZone: "UTC",
+        });
+
+        const escapeText = (value) => {
+          const span = document.createElement("span");
+          span.textContent = value;
+          return span.innerHTML;
+        };
+
+        const renderFallback = () => {
+          reviewGrid.hidden = true;
+          reviewGrid.replaceChildren();
+          summary.classList.remove("is-visible");
+          summary.replaceChildren();
+        };
+
+        const renderSummary = (aggregate) => {
+          if (
+            !aggregate ||
+            typeof aggregate.rating !== "number" ||
+            typeof aggregate.totalReviews !== "number" ||
+            !aggregate.updatedAt
+          ) {
+            summary.classList.remove("is-visible");
+            summary.replaceChildren();
+            return;
+          }
+
+          const updatedAt = formatter.format(new Date(aggregate.updatedAt));
+          summary.innerHTML = `
+            <strong class="google-rating-score">${escapeText(
+              aggregate.rating.toFixed(1),
+            )}</strong>
+            <p class="google-rating-copy">
+              ${escapeText(aggregate.totalReviews.toLocaleString("pt-BR"))}
+              avaliações públicas no Google. Fonte atualizada em
+              ${escapeText(updatedAt)}.
+            </p>
+          `;
+          summary.classList.add("is-visible");
+        };
+
+        const renderReviews = (reviews) => {
+          if (!Array.isArray(reviews) || reviews.length === 0) {
+            renderFallback();
+            return;
+          }
+
+          reviewGrid.replaceChildren(
+            ...reviews.map((review) => {
+              const article = document.createElement("article");
+              article.className = "google-review-card";
+              article.innerHTML = `
+                <header>
+                  <strong class="google-review-name">${escapeText(
+                    review.reviewer,
+                  )}</strong>
+                  <span
+                    class="google-review-stars"
+                    aria-label="Avaliação ${escapeText(
+                      String(review.rating),
+                    )} de 5 no Google"
+                  >
+                    <span aria-hidden="true">★★★★★</span>
+                  </span>
+                </header>
+                <p class="google-review-text">${escapeText(review.text)}</p>
+                <p class="google-review-meta">
+                  Google Maps, ${escapeText(
+                    formatter.format(new Date(review.reviewedAt)),
+                  )}
+                </p>
+              `;
+              return article;
+            }),
+          );
+          reviewGrid.hidden = false;
+        };
+
+        fetch("data/google-reviews-cache.json", { cache: "no-store" })
+          .then((response) => (response.ok ? response.json() : null))
+          .then((cache) => {
+            if (!cache || cache.state !== "loaded-with-cards") {
+              renderFallback();
+              return;
+            }
+
+            renderSummary(cache.aggregate);
+            renderReviews(cache.reviews);
+          })
+          .catch(renderFallback);
+      })();
+    </script>
   </body>
 </html>
